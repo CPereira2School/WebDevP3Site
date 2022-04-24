@@ -1,0 +1,295 @@
+/******w*************
+    
+    Project 1 Stylesheet
+    Name: Cedric Pereira   
+    Date: February 23rd, 2022
+    Description: CSS stylesheet used for project 1. Sizing, positioning, boxing, formatting, and more!
+
+********************/
+
+/* Resetting CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html 
+{
+    background-color: #E8E8E8;
+    font-family: 'Roboto', sans-serif;
+}
+
+a
+{
+    color: royalblue;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: darkblue;
+}
+
+a:focus
+{
+    color: pink;
+}
+
+li
+{
+    list-style: none;
+}
+
+body 
+{
+    background-color: white;
+    width: 80%;
+    margin: 15px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+header nav ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px
+}
+
+    header ul
+    {
+        display: flex;
+        margin: 0px auto;
+        padding-bottom: 5px;
+        /* Get This To Be Middle Alligned*/
+    }
+
+        header ul li
+        {
+            font-size: 1em;
+            padding: 0px 10px;
+        }
+
+        header ul li:not(:first-of-type)
+        {
+            border-left: 1px solid black;
+        }
+
+div#titleCard
+{
+    margin: 0px;
+    display: flex;
+    width: 80%;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+    div#titleCardText
+    {
+        padding-top: 10%;
+    }
+
+    div#titleCardText h1
+    {
+        font-size: 3.5em;
+        font-weight: 500;
+    }
+
+    div#titleCardText h2
+    {
+        font-style: italic;
+    }
+
+    div#titleCard img
+    {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+
+    main#indexMain
+    {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    main#indexMain h3
+    {
+        font-size: 1.5em;
+        font-style: italic;
+        color: deeppink;
+    }
+
+    main#indexMain p
+    {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    section
+    {
+        padding-top: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+        section h3
+        {
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        li#showingUp, #codeStuff, #jacked
+        {
+            display: flex;
+            padding: 10px;
+            border: 2.5px solid deeppink;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+            section ul li div
+            {
+                padding-left: 20px;
+                /* padding-top: 7%; */
+            }
+
+                section ul li div h4
+                {
+                    font-size: 1.3em;
+                    padding-top: 20px;
+                    color: deeppink;
+                }
+
+                section ul li div p
+                {
+                    padding-top: 40px;
+                }
+
+                section ul li div span 
+                {
+                    font-size: 1.2em;
+                    padding-top: 40px;
+                    display: block;
+                    color: deeppink;
+                }
+
+    form#contactForm
+    {
+        padding-top: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    form#contactForm h3
+    {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+        fieldset#contact 
+        {
+            display: flex;
+            justify-content: center; 
+            padding-top: 4%;
+            padding-bottom: 2%;
+        }
+
+        fieldset#contact ul li
+        {
+            padding-bottom: 2%;
+        } 
+
+            fieldset#contact ul li label
+            {
+                text-align: left;
+                display: inline-block;
+                width: 100px;
+            }
+
+                fieldset#contact ul li input, textarea
+                {
+                    width: 250px
+                }
+
+        fieldset#buttons
+        {
+            display: flex;
+            justify-content: center; 
+            padding-bottom: 2%;
+        }
+
+        .error
+        {
+            /*display: none;*/
+            color: red;
+        }
+
+footer
+{
+    font-size: .8em;
+}
+
+footer ul
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0px auto;
+        padding-bottom: 5px;
+    }
+
+        footer ul li
+        {
+            padding: 0px 10px;
+        }
+
+        footer ul li:not(:first-of-type)
+        {
+            border-left: 1px solid black;
+        }
+
+            footer ul li a
+            {
+                color: royalblue;
+                text-decoration: none;
+            }
+
+        footer p
+        {
+            text-align: center;
+        }
+
+        footer p:last-of-type
+        {
+            color: darkgray;
+        }
+
+        footer a
+        { 
+            text-decoration: none; 
+        }
